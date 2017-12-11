@@ -9,8 +9,7 @@ public class mainMenu
 
 		private static void addStudents()
 			{
-			
-				
+			System.out.println("add");
 			}
 
 	}
