@@ -4,9 +4,12 @@ public class mainMenu
 
 		public static void main(String[] args)
 			{
-				
-				System.out.println("hello");
+			addStudents();
+			}
 
+		private static void addStudents()
+			{
+			System.out.println("add");
 			}
 
 	}
