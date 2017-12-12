@@ -8,7 +8,7 @@ public class mainMenu
 			{
 			addStudents();
 			}
-		private static void addStudents()
+		private static void addStudents() throws IOException
 			{
 				Scanner file = new Scanner(new File("studentList.txt"));
 				while(file.hasNextLine())
