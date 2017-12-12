@@ -15,7 +15,11 @@ public class mainMenu
 					{
 						String line = file.nextLine();
 						String [] catcher = line.split(" ");
+						
+						
 					}
+				
+				
 			}
 
 	}

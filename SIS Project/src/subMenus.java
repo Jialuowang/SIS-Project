@@ -12,6 +12,7 @@ public class subMenus
 				int pick  = selection.nextInt();
 				if(pick == 1)
 				{
+					System.out.println();
 				// add first name, last name, etc...
 				//all implimented prior arrayList.add(firstName, lastName,firstPeriod,firstPeriodGrade, secondPeriod, secondPeriodGrade, thirdPeriod, thirdPeriodGrade)
 				System.out.println(pick);
