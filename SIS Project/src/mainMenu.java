@@ -13,7 +13,9 @@ public class mainMenu
 				Scanner file = new Scanner(new File("studentList.txt"));
 				while(file.hasNextLine())
 					{
+						
 						String line = file.nextLine();
+						System.out.println(line);
 						String [] catcher = line.split(" ");
 						
 						
