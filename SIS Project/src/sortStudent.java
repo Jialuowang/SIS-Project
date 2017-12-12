@@ -17,7 +17,7 @@ public abstract class sortStudent implements Comparator<Student>
 			int pick  = selection.nextInt();
 			if(pick == 1)
 				{
-					System.out.println("hello");
+					System.out.println("Hows it going");
 				}
 			else if(pick == 2)
 				{
