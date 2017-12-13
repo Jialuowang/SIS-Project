@@ -3,7 +3,7 @@ import java.util.*;
 
 public class mainMenu
 	{
-		ArrayList <Student> roster = new ArrayList <Student>();
+		static ArrayList <Student> roster = new ArrayList <Student>();
 		public static void main(String[] args) throws IOException
 			{
 			addStudents();

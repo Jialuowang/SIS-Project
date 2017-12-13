@@ -11,17 +11,28 @@ public class subMenus
 				Scanner selection = new Scanner(System.in);
 				int pick  = selection.nextInt();
 				if(pick == 1)
-				{
-					System.out.println();
-				// add first name, last name, etc...
-				//all implemented prior arrayList.add(firstName, lastName,firstPeriod,firstPeriodGrade, secondPeriod, secondPeriodGrade, thirdPeriod, thirdPeriodGrade)
-				System.out.println(pick);
+				{			
+				Add(mainMenu.roster);
 				}
 				else if(pick == 2)
 				{
-				//print list of arrays, at the bottom user picks which one to delete by number.
-			    System.out.println("Which Student would you like to delete?");
+				Del();
 				}
 			}
-
+		 static void Add(ArrayList rosterStu)
+		{
+			
+				for(int i = 0; i < rosterStu.size(); i++)
+				{
+					System.out.println(rosterStu.getfirstName(i) + " " + rosterStu.getlastName(i) + rosterStu.getfirstPeriod(i) + " ");
+				}
+				//test
+				//all implemented prior arrayList.add(firstName, lastName,firstPeriod,firstPeriodGrade, secondPeriod, secondPeriodGrade, thirdPeriod, thirdPeriodGrade)
+				
+		}
+		 static void Del()
+		 {
+			//print list of arrays, at the bottom user picks which one to delete by number.
+			    System.out.println("Which Student would you like to delete?");
+		 }
 	}
