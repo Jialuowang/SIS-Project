@@ -15,41 +15,41 @@ public class switchClasses
 					String i1 = userInput.nextLine();
 					System.out.println("please put in last name");
 					String i2 = userInput.nextLine();
-					for(int n = 0; n < mainMenu.studentList.size(); n++)
+					for(int n = 0; n < mainMenu.roster.size(); n++)
 						{
-							if(i1.equals(mainMenu.studentList.get(n).getFirstName)&&i2.equals(mainMenu.studentList(n).getLastName))
+							if(i1.equals(mainMenu.roster.get(n).getFirstName())&&i2.equals(mainMenu.roster.get(n).getLastName()))
 								{
 									System.out.println("which period you want to change?");
-									for(Student s : mainMenu.studentList)
+									for(Student s : mainMenu.roster)
 										{
-											System.out.println("period 1 : " + mainMenu.studentList.get(n).getFirstPeriod);
-											System.out.println("period 2 : " + mainMenu.studentList.get(n).getSecondPeriod);
-											System.out.println("period 3 : " + mainMenu.studentList.get(n).getThirdPeriod);
+											System.out.println("period 1 : " + mainMenu.roster.get(n).getFirstPeriod());
+											System.out.println("period 2 : " + mainMenu.roster.get(n).getSecondPeriod());
+											System.out.println("period 3 : " + mainMenu.roster.get(n).getThirdPeriod());
 										}
 									int p = userInput.nextInt();
 									if(p==1)
 										{
-											System.out.println("Now, the grade in " + mainMenu.studentList.get(n).getFirstPeriod + " is " + mainMenu.studentList.get(n).getFirstPeriodGrade);
+											System.out.println("Now, the grade in " + mainMenu.roster.get(n).getFirstPeriod() + " is " + mainMenu.roster.get(n).getFirstPeriodGrade());
 											System.out.println("what grade you want to put in");
 											String tc1 = userInput.nextLine();
-											mainMenu.studentList.get(n).setFirstPeriodGrade(tc1);
-											System.out.println("Now, the grade in " + mainMenu.studentList.get(n).getFirstPeriod + " is " + mainMenu.studentList.get(n).getFirstPeriodGrade);
+											mainMenu.roster.get(n).setFirstPeriodGrade(tc1);
+											System.out.println("Now, the grade in " + mainMenu.roster.get(n).getFirstPeriod() + " is " + mainMenu.roster.get(n).getFirstPeriodGrade());
 										}
 									if(p==2)
 										{
-											System.out.println("Now, the grade in " + mainMenu.studentList.get(n).getSecondPeriod + " is " + mainMenu.studentList.get(n).getSecondPeriodGrade);
+											System.out.println("Now, the grade in " + mainMenu.roster.get(n).getSecondPeriod() + " is " + mainMenu.roster.get(n).getSecondPeriodGrade());
 											System.out.println("what grade you want to put in");
 											String tc2 = userInput.nextLine();
-											mainMenu.studentList.get(n).setFirstPeriodGrade(tc1);
-											System.out.println("Now, the grade in " + mainMenu.studentList.get(n).getSecondPeriod + " is " + mainMenu.studentList.get(n).getSecondPeriodGrade);
+											mainMenu.roster.get(n).setFirstPeriodGrade(tc2);
+											System.out.println("Now, the grade in " + mainMenu.roster.get(n).getSecondPeriod() + " is " + mainMenu.roster.get(n).getSecondPeriodGrade());
 										}
 									if(p==3)
 										{
-											System.out.println("Now, the grade in " + mainMenu.studentList.get(n).getThirdPeriod + " is " + mainMenu.studentList.get(n).getThirdPeriodGrade);
+											System.out.println("Now, the grade in " + mainMenu.roster.get(n).getThirdPeriod() + " is " + mainMenu.roster.get(n).getThirdPeriodGrade());
 											System.out.println("what grade you want to put in");
 											String tc3 = userInput.nextLine();
-											mainMenu.studentList.get(n).setFirstPeriodGrade(tc1);
-											System.out.println("Now, the grade in " + mainMenu.studentList.get(n).getThirdPeriod + " is " + mainMenu.studentList.get(n).getThirdPeriodGrade);
+											mainMenu.roster.get(n).setFirstPeriodGrade(tc3);
+											System.out.println("Now, the grade in " + mainMenu.roster.get(n).getThirdPeriod() + " is " + mainMenu.roster.get(n).getThirdPeriodGrade());
 										}
 									else
 										{
@@ -73,24 +73,32 @@ public class switchClasses
 					String i1 = userInput.nextLine();
 					System.out.println("please put in last name");
 					String i2 = userInput.nextLine();
-					for(int n = 0; n < mainMenu.studentList.size(); n++)
+					for(int n = 0; n < mainMenu.roster.size(); n++)
 						{
-							if(i1.equals(mainMenu.studentList.get(n).getFirstName)&&i2.equals(mainMenu.studentList(n).getLastName))
+							if(i1.equals(mainMenu.roster.get(n).getFirstName())&&i2.equals(mainMenu.roster.get(n).getLastName()))
 								{
 									System.out.println("the period is:");
-									for(Student s : mainMenu.studentList)
+									for(Student s : mainMenu.roster)
 										{
-											System.out.println("period 1 : " + mainMenu.studentList.get(n).getFirstPeriod);
-											System.out.println("period 2 : " + mainMenu.studentList.get(n).getSecondPeriod);
-											System.out.println("period 3 : " + mainMenu.studentList.get(n).getThirdPeriod);
+											System.out.println("period 1 : " + mainMenu.roster.get(n).getFirstPeriod());
+											System.out.println("period 2 : " + mainMenu.roster.get(n).getSecondPeriod());
+											System.out.println("period 3 : " + mainMenu.roster.get(n).getThirdPeriod());
 										}
+									System.out.println("Please put in the new order, the first:");
+									int np1 = userInput.nextInt();
+									System.out.println("Please put in the new order, the second");
+									int np2 = userInput.nextInt();
+									System.out.println("Please put in the new order, the second");
+									int np3 = userInput.nextInt();
 									
 									t = false;
 								}
+						}
+			
 				}
 			else
 				{
-					System.out.println("null");
+					System.out.println("wrong selection");
 				}
 		}
-	}
+	}	
