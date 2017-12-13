@@ -7,6 +7,7 @@ public abstract class sortStudent implements Comparator<Student>
 	{
 		public static void main(String[] args)
 		{
+		static ArrayList <Student> roster = new ArrayList <Student>();
 		askChoice();
 		lastName();
 		gradeSort();
@@ -42,9 +43,9 @@ public abstract class sortStudent implements Comparator<Student>
 			}
 		private static void lastName()
 			{
-				for (int i = 0; i < roster.size(); i++) {
-			        for (int j = 0; j < roster.size(); j++) {
-			            Collections.sort(roster, new Comparator() {
+				for (int i = 0; i < mainMenu.roster.size(); i++) {
+			        for (int j = 0; j < mainMenu.roster.size(); j++) {
+			            Collections.sort(mainMenu.roster, new Comparator() {
 
 			                public int compare(Student o1, Student o2) {
 			                    Student p1 = (Student) o1;
