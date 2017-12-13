@@ -17,7 +17,7 @@ public class subMenus
 				else if(pick == 2)
 				{
 				Del();
-				}w
+				}
 			}
 		 static void Add(int pick)
 		{
