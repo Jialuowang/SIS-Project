@@ -88,7 +88,7 @@ public class switchClasses
 									int np1 = userInput.nextInt();
 									System.out.println("Please put in the new order, the second");
 									int np2 = userInput.nextInt();
-									System.out.println("Please put in the new order, the second");
+									System.out.println("Please put in the new order, the third");
 									int np3 = userInput.nextInt();
 									
 									t = false;
