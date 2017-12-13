@@ -1,8 +1,9 @@
 
 public class Student
 	{
-	private String firstName, lastName, firstPeriod, firstPeriodGrade, secondPeriod, secondPeriodGrade, thirdPeriod, thirdPeriodGrade;
-		public Student(String fn, String ln, String fp, String fpg, String sp, String spg, String tp, String tpg)
+	public String firstName, lastName, firstPeriod, firstPeriodGrade, secondPeriod, secondPeriodGrade, thirdPeriod, thirdPeriodGrade;
+	public int gradeAverage;
+		public Student(String fn, String ln, String fp, String fpg, String sp, String spg, String tp, String tpg, int gpa)
 		{
 		firstName = fn;
 		lastName = ln;
@@ -12,7 +13,9 @@ public class Student
 		secondPeriodGrade = spg;
 		thirdPeriod = tp;
 		thirdPeriodGrade = tpg;
+		gradeAverage = gpa;
 		}
+		
 		public String getFirstName()
 			{
 					return firstName;
@@ -76,5 +79,13 @@ public class Student
 		public void setThirdPeriodGrade(String thirdPeriodGrade)
 			{
 					this.thirdPeriodGrade = thirdPeriodGrade;
+			}
+		public int getGradeAverage()
+			{
+					return gradeAverage;
+			}
+		public void setGradeAverage(int gradeAverage)
+			{
+					this.gradeAverage = gradeAverage;
 			}
 	}
