@@ -135,6 +135,10 @@ public class switchClasses
 													
 												}
 										}
+									else
+										{
+											System.out.println("wrong selection");
+										}
 									
 										
 									
