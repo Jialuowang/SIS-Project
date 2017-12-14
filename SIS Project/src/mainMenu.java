@@ -9,7 +9,7 @@ public class mainMenu
 			addStudents();
 			promptUser();
 			}
-		private static void addStudents() throws IOException
+		public static void addStudents() throws IOException
 			{
 				Scanner file = new Scanner(new File("studentList.txt"));
 				while(file.hasNextLine())
