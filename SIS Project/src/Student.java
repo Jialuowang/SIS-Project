@@ -3,7 +3,7 @@ public class Student
 	{
 	public String firstName, lastName, firstPeriod, firstPeriodGrade, secondPeriod, secondPeriodGrade, thirdPeriod, thirdPeriodGrade;
 	public double gradeAverage;
-		public Student(String fn, String ln, String fp, String fpg, String sp, double gpa)
+		public Student(String fn, String ln, String fp, String fpg, String sp, String spg, String tp, String tpg, double gpa)
 		{
 		firstName = fn;
 		lastName = ln;
