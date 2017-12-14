@@ -8,6 +8,7 @@ public class mainMenu
 			{
 			addStudents();
 			promptUser();
+			
 			}
 		public static void addStudents() throws IOException
 			{
@@ -16,10 +17,12 @@ public class mainMenu
 					{
 						String line = file.nextLine();
 						String [] catcher = line.split(" ");
+						
+						double gpa = 0;
 						String fpg = catcher[3];
 						String spg = catcher[5];
 						String tpg = catcher[7];
-						double gpa = 0;
+						
 						switch(fpg)
 							{
 								case "A+":
@@ -217,7 +220,7 @@ public class mainMenu
 					}
 				case 2:
 					{
-					//switchClasses;	
+					switchClasses.switchClasses();	
 					break;
 					}
 				case 3:
