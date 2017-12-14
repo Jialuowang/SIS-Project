@@ -2,19 +2,24 @@ import java.util.Scanner;
 
 public class switchClasses
 	{
+		public static void main(String[] args)
+			{
+				switchClasses();
+			}
 		public static void switchClasses()
 		{
 			System.out.println("1) change grades(teachers only)");
 			System.out.println("2) switch class");
 			Scanner userInput = new Scanner(System.in);
+			Scanner userInput2 = new Scanner(System.in);
 			int chooser = userInput.nextInt();
 			if(chooser == 1)
 				{
 					boolean t = true;
-					System.out.println("who's grades you want to change? please put first name in");
-					String i1 = userInput.nextLine();
+					System.out.println("who's grades you want to change? please put in first name");
+					String i1 = userInput2.nextLine();
 					System.out.println("please put in last name");
-					String i2 = userInput.nextLine();
+					String i2 = userInput2.nextLine();
 					for(int n = 0; n < mainMenu.roster.size(); n++)
 						{
 							if(i1.equals(mainMenu.roster.get(n).getFirstName())&&i2.equals(mainMenu.roster.get(n).getLastName()))
@@ -70,9 +75,9 @@ public class switchClasses
 				{
 					boolean t = true;
 					System.out.println("who's grades you want to change? please put first name in");
-					String i1 = userInput.nextLine();
+					String i1 = userInput2.nextLine();
 					System.out.println("please put in last name");
-					String i2 = userInput.nextLine();
+					String i2 = userInput2.nextLine();
 					for(int n = 0; n < mainMenu.roster.size(); n++)
 						{
 							if(i1.equals(mainMenu.roster.get(n).getFirstName())&&i2.equals(mainMenu.roster.get(n).getLastName()))
@@ -145,6 +150,10 @@ public class switchClasses
 									
 									t = false;
 								}
+						}
+					if(t == true)
+						{
+							System.out.println("can't find this student");
 						}
 			
 				}
