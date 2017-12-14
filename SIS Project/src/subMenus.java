@@ -19,12 +19,12 @@ public class subMenus
 				Del();
 				}
 			}
-		 static void Add(ArrayList rosterStu)
+		 static void Add(ArrayList roster)
 		{
 			
-				for(int i = 0; i < rosterStu.size(); i++)
+				for(int i = 0; i < roster.size(); i++)
 				{
-					System.out.println(rosterStu.getfirstName(i) + " " + rosterStu.getlastName(i) + rosterStu.getfirstPeriod(i) + " ");
+					System.out.println(mainMenu.roster.get(i).getFirstName() + " " + mainMenu.roster.get(i).getLastName());
 				}
 				//test
 				//all implemented prior arrayList.add(firstName, lastName,firstPeriod,firstPeriodGrade, secondPeriod, secondPeriodGrade, thirdPeriod, thirdPeriodGrade)
