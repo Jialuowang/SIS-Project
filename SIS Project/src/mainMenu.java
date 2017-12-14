@@ -197,12 +197,41 @@ public class mainMenu
 						gpa /= 3;
 						roster.add(new Student(catcher[0], catcher[1], catcher[2], catcher[3], catcher[4], catcher[5], catcher[6], catcher[7], gpa));
 					}
-				
+
 				
 			}
 		private static void promptUser()
 			{
-			//fixed it
+			System.out.println("Welcome to the Gradebook! Would you like to:");
+			System.out.println("1: Add or Delete a Student");
+			System.out.println("2: Switch Classes for a Student");
+			System.out.println("3: Look at Student List");
+			Scanner selection = new Scanner(System.in);
+			int choice = selection.nextInt();
+			switch(choice)
+			{
+				case 1:
+					{
+					//subMenus;
+					break;
+					}
+				case 2:
+					{
+					//switchClasses;	
+					break;
+					}
+				case 3:
+					{
+					//sortStudent;	
+					break;
+					}
+				default:
+					{
+					System.out.println("That's not a valid answer.");
+					promptUser();
+					break;
+					}
+			}
 				
 			}
 
