@@ -197,6 +197,8 @@ public class mainMenu
 						gpa /= 3;
 						roster.add(new Student(catcher[0], catcher[1], catcher[2], catcher[3], catcher[4], catcher[5], catcher[6], catcher[7], gpa));
 					}
+				
+				
 			}
 		private static void promptUser()
 			{
