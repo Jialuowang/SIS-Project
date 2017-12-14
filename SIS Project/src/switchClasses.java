@@ -20,8 +20,11 @@ public class switchClasses
 					String i1 = userInput2.nextLine();
 					System.out.println("please put in last name");
 					String i2 = userInput2.nextLine();
+					System.out.println(i1);
+					System.out.println(mainMenu.roster.get(0).getFirstName());
 					for(int n = 0; n < mainMenu.roster.size(); n++)
 						{
+							
 							if(i1.equals(mainMenu.roster.get(n).getFirstName())&&i2.equals(mainMenu.roster.get(n).getLastName()))
 								{
 									System.out.println("which period you want to change?");
