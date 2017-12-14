@@ -16,9 +16,13 @@ public class mainMenu
 					{
 						String line = file.nextLine();
 						String [] catcher = line.split(" ");
+
 						int yes = 0;
 						roster.add(new Student(catcher[0], catcher[1], catcher[2], catcher[3], catcher[4], catcher[5], catcher[6], catcher[7], yes));
+
 					}
+				
+				
 			}
 		private static void promptUser()
 			{

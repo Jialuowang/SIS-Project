@@ -11,24 +11,24 @@ public class subMenus
 				Scanner selection = new Scanner(System.in);
 				int pick  = selection.nextInt();
 				if(pick == 1)
-				{
-				Add();
+				{			
+				Add(mainMenu.roster);
 				}
 				else if(pick == 2)
 				{
 				Del();
 				}
 			}
-		 static void Add(int pick)
+		 static void Add(ArrayList rosterStu)
 		{
-			//prints roster
-				for(int i = 0; i < roster.size(); i++)
+			
+				for(int i = 0; i < rosterStu.size(); i++)
 				{
-					System.out.println(roster.getfirstName(i) + " " + roster.getlastName(i) + roster.getfirstPeriod(i) + " " +);
+					System.out.println(rosterStu.getfirstName(i) + " " + rosterStu.getlastName(i) + rosterStu.getfirstPeriod(i) + " ");
 				}
 				//test
 				//all implemented prior arrayList.add(firstName, lastName,firstPeriod,firstPeriodGrade, secondPeriod, secondPeriodGrade, thirdPeriod, thirdPeriodGrade)
-				System.out.println(pick);
+				
 		}
 		 static void Del()
 		 {
