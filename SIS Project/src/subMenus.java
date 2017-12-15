@@ -8,10 +8,12 @@ public class subMenus
 		static DecimalFormat decFor = new DecimalFormat("0.0");
 		public static void main(String[] args) throws IOException
 			{
-				
-				System.out.println("1) Add a Student");
+			runner();
+			}
+		 public static void runner() throws IOException
+		 {
+			 System.out.println("1) Add a Student");
 				System.out.println("2) Delete a Student");
-				mainMenu.addStudents();
 				Scanner selection = new Scanner(System.in);
 				int pick  = selection.nextInt();
 				if(pick == 1)
@@ -22,8 +24,8 @@ public class subMenus
 				{
 				Del();
 				}
-			}
-		 public static void gpaCal(String fpG, String spG, String tpG)
+		 }
+		public static void gpaCal(String fpG, String spG, String tpG)
 				{
 					 gpa = 0;
 					switch(fpG)

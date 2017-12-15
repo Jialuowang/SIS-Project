@@ -8,10 +8,9 @@ public abstract class sortStudent implements Comparator<Student>
 	{
 		public static void main(String[] args) throws IOException
 		{
-		mainMenu.addStudents();
 		askChoice();
 		}
-		private static void askChoice()
+		public static void askChoice()
 			{
 				System.out.println("Would you like to sort a student by:");
 				System.out.println("1) Sort by last name");
