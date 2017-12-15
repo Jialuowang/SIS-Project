@@ -74,6 +74,7 @@ public class switchClasses
 						{
 							System.out.println("can't find this student");
 						}
+					switchClasses();
 					
 				}
 			else if(chooser == 2)
@@ -98,7 +99,7 @@ public class switchClasses
 					int np3 = userInput.nextInt();
 					if(np1 == 1)
 						{
-							if(np2 ==2)
+							if(np2 ==2) 
 								{
 									
 								}
@@ -142,7 +143,11 @@ public class switchClasses
 						{
 							System.out.println("wrong selection");
 						}
-					
+					System.out.println("here is new order of class");
+					System.out.println("period 1 : " + mainMenu.roster.get(n).getFirstPeriod());
+					System.out.println("period 2 : " + mainMenu.roster.get(n).getSecondPeriod());
+					System.out.println("period 3 : " + mainMenu.roster.get(n).getThirdPeriod());
+					switchClasses();
 				}		
 		
 					
