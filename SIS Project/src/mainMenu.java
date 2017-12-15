@@ -6,7 +6,6 @@ public class mainMenu
 		static ArrayList <Student> roster = new ArrayList <Student>();
 		public static void main(String[] args) throws IOException
 			{
-			addStudents();
 			promptUser();
 			
 			}
@@ -17,7 +16,6 @@ public class mainMenu
 					{
 						String line = file.nextLine();
 						String [] catcher = line.split(" ");
-						
 						double gpa = 0;
 						String fpg = catcher[3];
 						String spg = catcher[5];
@@ -203,7 +201,7 @@ public class mainMenu
 
 				
 			}
-		private static void promptUser()
+		private static void promptUser() throws IOException
 			{
 			System.out.println("Welcome to the Gradebook! Would you like to:");
 			System.out.println("1: Add or Delete a Student");
@@ -215,17 +213,20 @@ public class mainMenu
 			{
 				case 1:
 					{
-					//subMenus;
+					addStudents();
+					subMenus.runner();
 					break;
 					}
 				case 2:
 					{
+					addStudents();
 					switchClasses.switchClasses();	
 					break;
 					}
 				case 3:
 					{
-					//sortStudent;	
+					addStudents();
+					sortStudent.askChoice();	
 					break;
 					}
 				default:

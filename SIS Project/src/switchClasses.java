@@ -4,7 +4,6 @@ public class switchClasses
 	{
 		public static void main(String[] args) throws IOException
 			{
-				mainMenu.addStudents();
 				switchClasses();
 			}
 		public static void switchClasses()
